@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Online Atlas Front Page Template</title>
+    <!--add required stylesheet-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+    <style>
+
+        body {
+            height: 100%;
+            padding: 20px;
+            margin: 20px;
+            font-family: Cairo, sans-serif;
+        }
+
+        .map {
+            padding: 10px;
+
+        }
+
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 0px;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: auto;
+            opacity: 0.6;
+            background-color: rgba(0, 7, 10, 0.36);
+            transition: .5s ease;
+        }
+
+        .overlay:hover {
+            opacity: 0.3;
+        }
+
+        .text {
+            color: white;
+            font-size: 18px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
+    </style>
+
+    <!--add required javascript-->
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- Page Content -->
+<div class="container">
+    <!-- Page Header -->
+    <!--justify-content-center to center columns (col-*) inside row-->
+    <div class="row justify-content-center align-items-center">
+        <a href="#" target="_blank"><img src="http://via.placeholder.com/180x100"></a>
+    </div>
+
+    <div class="row text-center">
+        <div class="col-12">
+            <h2>Majid Farahani</h2>
+            <hr>
+            <h3>My Github repositories</h3>
+        </div>
+    </div>
+
+    <hr>
+    <!--mx-auto for centering inside flex elements-->
+    <div class="row mx-auto text-center">
+
+        <div class="col-md-4 col-lg-4 map">
+
+
+            <a href="https://farahanimajid.github.io/airportmap/">
+                <img src="img/airportmap.jpg" alt="Airports" class="image">
+            </a>
+
+
+            <div class="overlay">
+                <div class="text"><h3 style="color:red;text-shadow: 2px 2px #FFFFFF"><a href="https://farahanimajid.github.io/airportmap/">AirportMap</a></h3>
+                    <small>An interactive map of all airports in U.S.</small>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-4 col-lg-4 map">
+            <a href="https://farahanimajid.github.io/airportmap/">
+                <img src="img/InterACTWEL1.jpg" alt="InterACTWEL" class="image">
+            </a>
+            <div class="overlay">
+                <div class="text"><h3 style="color:red;text-shadow: 2px 2px #FFFFFF"><a href="https://farahanimajid.github.io/InterACTWEL/">InterACTWEL</a></h3>
+                    <small>Interactive Adaptation and Collaboration Tool for managing Water, Energy and Land</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-lg-4 map">
+            <a href="https://farahanimajid.github.io/farahani_shapefiletogeojason/">
+                <img src="img/shpToGeojson1.jpg" alt="shp To geojson" class="image">
+            </a>
+            <div class="overlay">
+                <div class="text"><h3 style="color:red;text-shadow: 2px 2px #FFFFFF"><a href="https://farahanimajid.github.io/farahani_shapefiletogeojason/">Shapefile To Geojson</a></h3>
+                    <small>preparing data for web map and changing the format and size</small>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row mx-auto text-center">
+
+        <div class="col-md-4 col-lg-4 map">
+            <a href="https://farahanimajid.github.io/resume">
+                <img src="img/CV.jpg" alt="CV" class="image">
+            </a>
+            <div class="overlay">
+                <div class="text"><h3 style="color:red;text-shadow: 2px 2px #FFFFFF"><a href="https://farahanimajid.github.io/resume">Resume</a></h3>
+                    <small>A summary in my resume </small>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-lg-4 map">
+            <a href="https://farahanimajid.github.io/farahani_shapefiletogeojason/">
+                <img src="img/storymap.jpg" alt="storymap" class="image">
+            </a>
+            <div class="overlay">
+                <div class="text"><h3 style="color:red;text-shadow: 2px 2px #FFFFFF"><a href="/">Storymap</a></h3>
+                    <small>A story map for umatilla basin</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-lg-4 map">
+            <a href="https://farahanimajid.github.io/proposal/">
+                <img src="img/proposal.jpg" alt="proposal" class="image">
+            </a>
+            <div class="overlay">
+                <div class="text"><h3 style="color:red;text-shadow: 2px 2px #FFFFFF"><a href="https://farahanimajid.github.io/proposal/">proposal</a></h3>
+                    <small>A brief proposal for InterACTWEL project</small>
+                </div>
+            </div>
+        </div>
+
+
+
+    <hr>
+
+    <footer class="container">
+
+        <div class="row justify-content-center align-items-center">
+            <p> Majid Farahani, Oregon State University, 2018 </p>
+        </div>
+
+        <div class="row justify-content-center align-items-center">
+            <a href="http://oregonstate.edu/" target="_blank"><img src="img/OSU1.png"></a>
+
+        </div>
+    </footer>
+
+</div>
+
+</body>
+
+</html>
